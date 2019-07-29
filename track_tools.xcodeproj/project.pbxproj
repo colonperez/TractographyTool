@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXFileReference section */
+		2F14B2F2127C6491002C61CD /* track_niftimath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_niftimath.h; path = src/track_niftimath.h; sourceTree = "<group>"; };
+		2F14B2F3127C6491002C61CD /* track_niftimath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_niftimath.c; path = src/track_niftimath.c; sourceTree = "<group>"; };
+		2F5447E911E105E400F87329 /* lssq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lssq.h; path = src/lssq.h; sourceTree = "<group>"; };
+		2F5447EA11E105F300F87329 /* lssq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lssq.c; path = src/lssq.c; sourceTree = "<group>"; };
+		2F5447EC11E107F700F87329 /* matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrices.h; path = src/matrices.h; sourceTree = "<group>"; };
+		2F5447ED11E1080400F87329 /* matrices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = matrices.c; path = src/matrices.c; sourceTree = "<group>"; };
+		2F60292911A94FA0006C0D3F /* track_point.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_point.c; path = src/track_point.c; sourceTree = "<group>"; };
+		2F82F013127E05FA006557B9 /* track_intersect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_intersect.c; path = src/track_intersect.c; sourceTree = "<group>"; };
+		2FABAE9A11D7772900DB39F0 /* mow_recon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mow_recon.c; path = src/mow_recon.c; sourceTree = "<group>"; };
+		2FABAE9B11D7772900DB39F0 /* mow_recon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mow_recon.h; path = src/mow_recon.h; sourceTree = "<group>"; };
+		2FABAE9C11D7772900DB39F0 /* nnls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nnls.c; path = src/nnls.c; sourceTree = "<group>"; };
+		2FABAE9D11D7772900DB39F0 /* nnls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnls.h; path = src/nnls.h; sourceTree = "<group>"; };
+		2FB8A4F211FF5F8E00849FA0 /* knuthrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = knuthrand.h; path = src/knuthrand.h; sourceTree = "<group>"; };
+		2FB8A4F311FF5F8E00849FA0 /* knuthrand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = knuthrand.c; path = src/knuthrand.c; sourceTree = "<group>"; };
+		2FC561BD122FA1CF00075716 /* nifti1_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nifti1_io.h; path = src/nifti1_io.h; sourceTree = "<group>"; };
+		2FC561BE122FA1CF00075716 /* nifti1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nifti1.h; path = src/nifti1.h; sourceTree = "<group>"; };
+		2FC561BF122FA21700075716 /* znzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = znzlib.c; path = src/znzlib.c; sourceTree = "<group>"; };
+		2FC561C0122FA22700075716 /* znzlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = znzlib.h; path = src/znzlib.h; sourceTree = "<group>"; };
+		2FFDBC8A11A7EB9B0053DAA8 /* track_density_mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_density_mask.c; path = src/track_density_mask.c; sourceTree = "<group>"; };
+		2FFDBC8B11A7EB9B0053DAA8 /* track_merge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_merge.c; path = src/track_merge.c; sourceTree = "<group>"; };
+		2FFDBC8C11A7EB9B0053DAA8 /* track_network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_network.c; path = src/track_network.c; sourceTree = "<group>"; };
+		2FFDBC8D11A7EB9B0053DAA8 /* track_split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_split.c; path = src/track_split.c; sourceTree = "<group>"; };
+		2FFDBC8E11A7EB9B0053DAA8 /* track_subset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_subset.c; path = src/track_subset.c; sourceTree = "<group>"; };
+		2FFDBC8F11A7EB9B0053DAA8 /* track_track.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_track.c; path = src/track_track.c; sourceTree = "<group>"; };
+		2FFDBC9011A7EB9B0053DAA8 /* track_tracker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = track_tracker.c; path = src/track_tracker.c; sourceTree = "<group>"; };
+		2FFDBC9111A7EB9B0053DAA8 /* trackvis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trackvis.c; path = src/trackvis.c; sourceTree = "<group>"; };
+		2FFDBC9211A7EBB30053DAA8 /* track_network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_network.h; path = src/track_network.h; sourceTree = "<group>"; };
+		2FFDBC9311A7EBB30053DAA8 /* track_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_point.h; path = src/track_point.h; sourceTree = "<group>"; };
+		2FFDBC9411A7EBB30053DAA8 /* track_track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_track.h; path = src/track_track.h; sourceTree = "<group>"; };
+		2FFDBC9511A7EBB30053DAA8 /* trackvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trackvis.h; path = src/trackvis.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* track_tools */ = {
+			isa = PBXGroup;
+			children = (
+				2FFDBC8911A7EB790053DAA8 /* Headers */,
+				2FFDBC8811A7EB740053DAA8 /* Sources */,
+			);
+			name = track_tools;
+			sourceTree = "<group>";
+		};
+		2FFDBC8811A7EB740053DAA8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8A4F311FF5F8E00849FA0 /* knuthrand.c */,
+				2F5447EA11E105F300F87329 /* lssq.c */,
+				2F5447ED11E1080400F87329 /* matrices.c */,
+				2FABAE9A11D7772900DB39F0 /* mow_recon.c */,
+				2FABAE9C11D7772900DB39F0 /* nnls.c */,
+				2FFDBC8A11A7EB9B0053DAA8 /* track_density_mask.c */,
+				2F82F013127E05FA006557B9 /* track_intersect.c */,
+				2FFDBC8B11A7EB9B0053DAA8 /* track_merge.c */,
+				2FFDBC8C11A7EB9B0053DAA8 /* track_network.c */,
+				2F14B2F3127C6491002C61CD /* track_niftimath.c */,
+				2F60292911A94FA0006C0D3F /* track_point.c */,
+				2FFDBC8D11A7EB9B0053DAA8 /* track_split.c */,
+				2FFDBC8E11A7EB9B0053DAA8 /* track_subset.c */,
+				2FFDBC8F11A7EB9B0053DAA8 /* track_track.c */,
+				2FFDBC9011A7EB9B0053DAA8 /* track_tracker.c */,
+				2FFDBC9111A7EB9B0053DAA8 /* trackvis.c */,
+				2FC561BF122FA21700075716 /* znzlib.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		2FFDBC8911A7EB790053DAA8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8A4F211FF5F8E00849FA0 /* knuthrand.h */,
+				2F5447E911E105E400F87329 /* lssq.h */,
+				2F5447EC11E107F700F87329 /* matrices.h */,
+				2FABAE9B11D7772900DB39F0 /* mow_recon.h */,
+				2FC561BD122FA1CF00075716 /* nifti1_io.h */,
+				2FC561BE122FA1CF00075716 /* nifti1.h */,
+				2FABAE9D11D7772900DB39F0 /* nnls.h */,
+				2FFDBC9511A7EBB30053DAA8 /* trackvis.h */,
+				2FFDBC9211A7EBB30053DAA8 /* track_network.h */,
+				2F14B2F2127C6491002C61CD /* track_niftimath.h */,
+				2FFDBC9311A7EBB30053DAA8 /* track_point.h */,
+				2FFDBC9411A7EBB30053DAA8 /* track_track.h */,
+				2FC561C0122FA22700075716 /* znzlib.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2F82F01D127E0721006557B9 /* track_niftimath */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2F82F01E127E0721006557B9 /* Build configuration list for PBXLegacyTarget "track_niftimath" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_niftimath;
+			passBuildSettingsInEnvironment = 0;
+			productName = track_intersect;
+		};
+		2FABAE9E11D77C3200DB39F0 /* mow_recon */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FABAE9F11D77C3200DB39F0 /* Build configuration list for PBXLegacyTarget "mow_recon" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = mow_recon;
+			passBuildSettingsInEnvironment = 0;
+			productName = track_intersect;
+		};
+		2FFDBC9811A7EBED0053DAA8 /* track_intersect */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCA111A7EC330053DAA8 /* Build configuration list for PBXLegacyTarget "track_intersect" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_intersect;
+			passBuildSettingsInEnvironment = 0;
+			productName = track_intersect;
+		};
+		2FFDBCB011A7ECA50053DAA8 /* track_tracker */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCBB11A7ECE10053DAA8 /* Build configuration list for PBXLegacyTarget "track_tracker" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_tracker;
+			passBuildSettingsInEnvironment = 1;
+			productName = track_tracker;
+		};
+		2FFDBCB311A7ECBE0053DAA8 /* all */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = all;
+			buildConfigurationList = 2FFDBCBA11A7ECE10053DAA8 /* Build configuration list for PBXLegacyTarget "all" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = all;
+			passBuildSettingsInEnvironment = 1;
+			productName = all;
+		};
+		2FFDBCBE11A7ECF50053DAA8 /* clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = clean;
+			buildConfigurationList = 2FFDBCC311A7ED160053DAA8 /* Build configuration list for PBXLegacyTarget "clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = clean;
+		};
+		2FFDBCC811A7EDB30053DAA8 /* track_network */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCE111A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_network" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_network;
+			passBuildSettingsInEnvironment = 1;
+			productName = track_network;
+		};
+		2FFDBCCB11A7EDCF0053DAA8 /* track_subset */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCE211A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_subset" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_subset;
+			passBuildSettingsInEnvironment = 1;
+			productName = track_subset;
+		};
+		2FFDBCCE11A7EDDF0053DAA8 /* track_merge */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCE311A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_merge" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_merge;
+			passBuildSettingsInEnvironment = 1;
+			productName = track_merge;
+		};
+		2FFDBCD111A7EDED0053DAA8 /* track_split */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "DEBUG=$DEBUG $ACTION";
+			buildConfigurationList = 2FFDBCE411A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_split" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/btt/TrackTools/track_tools/src;
+			dependencies = (
+			);
+			name = track_split;
+			passBuildSettingsInEnvironment = 1;
+			productName = track_split;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "track_tools" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* track_tools */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FFDBCB311A7ECBE0053DAA8 /* all */,
+				2FFDBCBE11A7ECF50053DAA8 /* clean */,
+				2FFDBC9811A7EBED0053DAA8 /* track_intersect */,
+				2FFDBCB011A7ECA50053DAA8 /* track_tracker */,
+				2FFDBCC811A7EDB30053DAA8 /* track_network */,
+				2FFDBCCB11A7EDCF0053DAA8 /* track_subset */,
+				2FFDBCCE11A7EDDF0053DAA8 /* track_merge */,
+				2FFDBCD111A7EDED0053DAA8 /* track_split */,
+				2FABAE9E11D77C3200DB39F0 /* mow_recon */,
+				2F82F01D127E0721006557B9 /* track_niftimath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB919408733D9F0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB919508733D9F0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		2F82F01F127E0721006557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_niftimath;
+			};
+			name = Debug;
+		};
+		2F82F020127E0721006557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_niftimath;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FABAEA011D77C3200DB39F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = mow_recon;
+			};
+			name = Debug;
+		};
+		2FABAEA111D77C3200DB39F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_intersect;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBC9911A7EBED0053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_intersect;
+			};
+			name = Debug;
+		};
+		2FFDBC9A11A7EBED0053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_intersect;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCB111A7ECA50053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = "\U00010";
+				PRODUCT_NAME = track_tracker;
+			};
+			name = Debug;
+		};
+		2FFDBCB211A7ECA50053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_tracker;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCB411A7ECBE0053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = all;
+			};
+			name = Debug;
+		};
+		2FFDBCB511A7ECBE0053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = all;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCBF11A7ECF50053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = clean;
+			};
+			name = Debug;
+		};
+		2FFDBCC011A7ECF50053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = clean;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCC911A7EDB30053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_network;
+			};
+			name = Debug;
+		};
+		2FFDBCCA11A7EDB30053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_network;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCCC11A7EDCF0053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_subset;
+			};
+			name = Debug;
+		};
+		2FFDBCCD11A7EDCF0053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_subset;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCCF11A7EDDF0053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_merge;
+			};
+			name = Debug;
+		};
+		2FFDBCD011A7EDDF0053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_merge;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2FFDBCD211A7EDEE0053DAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = track_split;
+			};
+			name = Debug;
+		};
+		2FFDBCD311A7EDEE0053DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = track_split;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "track_tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB919408733D9F0010E9CD /* Debug */,
+				1DEB919508733D9F0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F82F01E127E0721006557B9 /* Build configuration list for PBXLegacyTarget "track_niftimath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F82F01F127E0721006557B9 /* Debug */,
+				2F82F020127E0721006557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FABAE9F11D77C3200DB39F0 /* Build configuration list for PBXLegacyTarget "mow_recon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FABAEA011D77C3200DB39F0 /* Debug */,
+				2FABAEA111D77C3200DB39F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCA111A7EC330053DAA8 /* Build configuration list for PBXLegacyTarget "track_intersect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBC9911A7EBED0053DAA8 /* Debug */,
+				2FFDBC9A11A7EBED0053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCBA11A7ECE10053DAA8 /* Build configuration list for PBXLegacyTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCB411A7ECBE0053DAA8 /* Debug */,
+				2FFDBCB511A7ECBE0053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCBB11A7ECE10053DAA8 /* Build configuration list for PBXLegacyTarget "track_tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCB111A7ECA50053DAA8 /* Debug */,
+				2FFDBCB211A7ECA50053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCC311A7ED160053DAA8 /* Build configuration list for PBXLegacyTarget "clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCBF11A7ECF50053DAA8 /* Debug */,
+				2FFDBCC011A7ECF50053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCE111A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCC911A7EDB30053DAA8 /* Debug */,
+				2FFDBCCA11A7EDB30053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCE211A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_subset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCCC11A7EDCF0053DAA8 /* Debug */,
+				2FFDBCCD11A7EDCF0053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCE311A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_merge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCCF11A7EDDF0053DAA8 /* Debug */,
+				2FFDBCD011A7EDDF0053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFDBCE411A7EE060053DAA8 /* Build configuration list for PBXLegacyTarget "track_split" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFDBCD211A7EDEE0053DAA8 /* Debug */,
+				2FFDBCD311A7EDEE0053DAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
